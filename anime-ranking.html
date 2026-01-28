@@ -94,7 +94,7 @@
 
         .ranking-content {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 15px;
             flex-wrap: wrap;
         }
@@ -267,7 +267,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">
-                <i class="bi bi-film"></i> AniListo
+                <i class="bi bi-controller"></i> PlayHub
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -305,7 +305,7 @@
             <h1 class="display-4 fw-bold mb-3">
                 <i class="bi bi-trophy-fill"></i> ランキング
             </h1>
-            <p class="lead">みんなが選ぶ人気アニメランキング</p>
+            <p class="lead">みんなが選ぶ人気ゲームランキング</p>
         </div>
     </div>
 
@@ -313,8 +313,8 @@
         <!-- タブナビゲーション -->
         <ul class="nav nav-pills nav-fill mb-4" id="rankingTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link tab-btn m-1 active" id="overall-tab" data-bs-toggle="pill" data-bs-target="#overall"
-                    type="button" role="tab">
+                <button class="nav-link tab-btn m-1 active" id="overall-tab" data-bs-toggle="pill"
+                    data-bs-target="#overall" type="button" role="tab">
                     <i class="bi bi-star-fill"></i> 総合<span class="d-none d-lg-inline">ランキング</span>
                 </button>
             </li>
@@ -343,247 +343,307 @@
             <!-- 総合ランキング -->
             <div class="tab-pane fade show active" id="overall" role="tabpanel">
                 <!-- 1位 -->
-                <div class="card ranking-card">
-                    <div class="card-body">
-                        <div class="ranking-content">
-                            <div class="rank-badge rank-1">
-                                1
-                                <i class="bi bi-trophy-fill position-absolute d-none d-md-block"
-                                    style="top: -10px; right: -10px; font-size: 1.5rem;"></i>
-                            </div>
-                            <img src="images/最強魔法使いの転生.webp" class="anime-thumbnail" alt="1位">
-                            <div class="ranking-info">
-                                <div class="d-flex gap-2 mb-2 flex-wrap">
-                                    <span class="badge bg-primary">ファンタジー</span>
-                                    <span class="badge bg-success">放送中</span>
-                                    <span class="badge bg-warning text-dark">人気急上昇</span>
-                                </div>
-                                <h4 class="ranknig-title">最強魔法使いの転生</h4>
-                                <p class="ranking-description">史上最強の魔法使いが転生して無双する王道ファンタジー</p>
-                                <div class="ranking-meta">
-                                    <div class="rating-stars">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
-                                        <span class="text-dark ms-1 fw-bold">4.9</span>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6">
+                        <div class="card ranking-card">
+                            <div class="card-body">
+                                <div class="ranking-content">
+                                    <div class="rank-badge rank-1">
+                                        1
+                                        <i class="bi bi-trophy-fill position-absolute d-none d-md-block"
+                                            style="top: -10px; right: -10px; font-size: 1.5rem;"></i>
                                     </div>
-                                    <span class="text-muted">3,456件のレビュー</span>
-                                    <span class="trend-up">
-                                        <i class="bi bi-arrow-up-circle-fill"></i> 先週より +2
-                                    </span>
+                                    <img src="images/mariokart.jpg" class="anime-thumbnail img-fluid rounded" alt="1位">
+                                    <div class="ranking-info">
+                                        <div class="d-flex gap-2 mb-2 flex-wrap">
+                                            <span class="badge" style="background-color: #f97316;">レース</span>
+                                            <span class="badge bg-success">switch2</span>
+                                            <span class="badge bg-warning text-dark">人気急上昇</span>
+                                        </div>
+                                        <h4 class="ranking-title">マリオカート　ワールド</h4>
+                                        <p class="ranking-description">マリオカートシリーズ新作。オープンワールドでレースができる。</p>
+                                        <div class="ranking-meta">
+                                            <div class="rating-stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                                <span class="text-dark ms-1 fw-bold">4.9</span>
+                                            </div>
+                                            <span class="text-muted">3,456件のレビュー</span>
+                                            <span class="trend-up">
+                                                <i class="bi bi-arrow-up-circle-fill"></i> 先週より +2
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="ranking-action">
+                                        <button class="btn btn-outline-dark">詳細</button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="ranking-action">
-                                <button class="btn btn-outline-dark">詳細</button>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- 2位 -->
-                <div class="card ranking-card">
-                    <div class="card-body">
-                        <div class="ranking-content">
-                            <div class="rank-badge rank-2">2</div>
-                            <img src="images/竜騎士の伝説.webp" class="anime-thumbnail" alt="2位">
-                            <div class="ranking-info">
-                                <div class="d-flex gap-2 mb-2 flex-wrap">
-                                    <span class="badge bg-primary">ファンタジー</span>
-                                    <span class="badge bg-success">放送中</span>
-                                </div>
-                                <h4 class="ranking-title">竜騎士の伝説</h4>
-                                <p class="ranking-description">竜と契約した騎士の壮大な冒険譚</p>
-                                <div class="ranking-meta">
-                                    <div class="rating-stars">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
-                                        <span class="text-dark ms-1 fw-bold">4.7</span>
+
+                    <!-- 2位 -->
+                    <div class="col-12 col-md-6">
+                        <div class="card ranking-card">
+                            <div class="card-body">
+                                <div class="ranking-content">
+                                    <div class="rank-badge rank-2">2</div>
+                                    <img src="images/roblox.jpg" class="anime-thumbnail" alt="2位">
+                                    <div class="ranking-info">
+                                        <div class="d-flex gap-2 mb-2 flex-wrap">
+                                            <span class="badge bg-danger">アクション</span>
+                                            <span class="badge bg-success">PC</span>
+                                            <span class="badge bg-success">XBOX</span>
+                                            <span class="badge bg-success">PS5</span>
+                                            <span class="badge bg-success">スマホ・タブレット</span>
+                                        </div>
+                                        <h4 class="ranking-title">ROBLOX</h4>
+                                        <p class="ranking-description">ユーザーが作成した数百万以上のゲームを無料で遊べるオンラインゲーム</p>
+                                        <div class="ranking-meta">
+                                            <div class="rating-stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                                <span class="text-dark ms-1 fw-bold">4.7</span>
+                                            </div>
+                                            <span class="text-muted">2,890件のレビュー</span>
+                                            <span class="trend-down">
+                                                <i class="bi bi-arrow-down-circle-fill"></i> 先週より -1
+                                            </span>
+                                        </div>
                                     </div>
-                                    <span class="text-muted">2,890件のレビュー</span>
-                                    <span class="trend-down">
-                                        <i class="bi bi-arrow-down-circle-fill"></i> 先週より -1
-                                    </span>
+                                    <div class="ranking-action">
+                                        <button class="btn btn-outline-dark">詳細</button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="ranking-action">
-                                <button class="btn btn-outline-dark">詳細</button>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- 3位 -->
-                <div class="card ranking-card">
-                    <div class="card-body">
-                        <div class="ranking-content">
-                            <div class="rank-badge rank-3">3</div>
-                            <img src="images/魔法学園の日常.webp" class="anime-thumbnail" alt="3位">
-                            <div class="ranking-info">
-                                <div class="d-flex gap-2 mb-2 flex-wrap">
-                                    <span class="badge bg-primary">ファンタジー</span>
-                                    <span class="badge bg-success">放送中</span>
-                                </div>
-                                <h4 class="ranking-title">魔法学園の日常</h4>
-                                <p class="ranking-description">魔法学園での青春ファンタジーコメディ</p>
-                                <div class="ranking-meta">
-                                    <div class="rating-stars">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
-                                        <span class="text-dark ms-1 fw-bold">4.6</span>
+                    <!-- 3位 -->
+                    <div class="col-12 col-md-6">
+                        <div class="card ranking-card">
+                            <div class="card-body">
+                                <div class="ranking-content">
+                                    <div class="rank-badge rank-3">3</div>
+                                    <img src="images/VALORANT.jpg" class="anime-thumbnail" alt="3位">
+                                    <div class="ranking-info">
+                                        <div class="d-flex gap-2 mb-2 flex-wrap">
+                                            <span class="badge bg-info">FPS</span>
+                                            <span class="badge bg-success">PC</span>
+                                        </div>
+                                        <h4 class="ranking-title">VALORANT</h4>
+                                        <p class="ranking-description">5対5で戦う基本プレイ無料のタクティカルFPSです。</p>
+                                        <div class="ranking-meta">
+                                            <div class="rating-stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-half"></i>
+                                                <span class="text-dark ms-1 fw-bold">4.6</span>
+                                            </div>
+                                            <span class="text-muted">2,345件のレビュー</span>
+                                            <span class="trend-up">
+                                                <i class="bi bi-arrow-up-circle-fill"></i> 先週より +1
+                                            </span>
+                                        </div>
                                     </div>
-                                    <span class="text-muted">2,345件のレビュー</span>
-                                    <span class="trend-up">
-                                        <i class="bi bi-arrow-up-circle-fill"></i> 先週より +1
-                                    </span>
+                                    <div class="ranking-action">
+                                        <button class="btn btn-outline-dark">詳細</button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="ranking-action">
-                                <button class="btn btn-outline-dark">詳細</button>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- 4位以降 -->
-                <div class="card ranking-card">
-                    <div class="card-body">
-                        <div class="ranking-content">
-                            <div class="rank-badge rank-other">4</div>
-                            <img src="images/桜色の約束.webp" class="anime-thumbnail" alt="4位">
-                            <div class="ranking-info">
-                                <div class="d-flex gap-2 mb-2 flex-wrap">
-                                    <span class="badge bg-danger">恋愛</span>
-                                    <span class="badge bg-success">放送中</span>
-                                </div>
-                                <h4 class="ranking-title">桜色の約束</h4>
-                                <p class="ranking-description">高校最後の春、幼馴染との約束を胸に青春を駆け抜ける</p>
-                                <div class="ranking-meta">
-                                    <div class="rating-stars">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
-                                        <span class="text-dark ms-1 fw-bold">4.8</span>
+                    <!-- 4位以降 -->
+                    <div class="col-12 col-md-6">
+                        <div class="card ranking-card">
+                            <div class="card-body">
+                                <div class="ranking-content">
+                                    <div class="rank-badge rank-other">4</div>
+                                    <img src="images/kirbyairriders.jpg" class="anime-thumbnail" alt="4位">
+                                    <div class="ranking-info">
+                                        <div class="d-flex gap-2 mb-2 flex-wrap">
+                                            <span class="badge" style="background-color:#f97316;">レース</span>
+                                            <span class="badge bg-success">switch2</span>
+                                        </div>
+                                        <h4 class="ranking-title">カービィのエアライダー</h4>
+                                        <p class="ranking-description">カービィたちが個性的なマシンに乗って空や地を駆け抜ける、レースゲームです。</p>
+                                        <div class="ranking-meta">
+                                            <div class="rating-stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                                <span class="text-dark ms-1 fw-bold">4.4</span>
+                                            </div>
+                                            <span class="text-muted">1,987件のレビュー</span>
+                                            <span class="trend-same">
+                                                <i class="bi bi-dash-circle-fill"></i> 変動なし
+                                            </span>
+                                        </div>
                                     </div>
-                                    <span class="text-muted">2,156件のレビュー</span>
-                                    <span class="trend-same">
-                                        <i class="bi bi-dash-circle-fill"></i> 変動なし
-                                    </span>
+                                    <div class="ranking-action">
+                                        <button class="btn btn-outline-dark">詳細</button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="ranking-action">
-                                <button class="btn btn-outline-dark">詳細</button>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card ranking-card">
-                    <div class="card-body">
-                        <div class="ranking-content">
-                            <div class="rank-badge rank-other">5</div>
-                            <img src="images/量子戦士クロノス.webp" class="anime-thumbnail" alt="5位">
-                            <div class="ranking-info">
-                                <div class="d-flex gap-2 mb-2 flex-wrap">
-                                    <span class="badge bg-info">SF</span>
-                                    <span class="badge bg-success">放送中</span>
-                                </div>
-                                <h4 class="ranking-title">量子戦士クロノス</h4>
-                                <p class="ranking-description">時空を超えた戦いに巻き込まれた少年の壮大なSFアクション</p>
-                                <div class="ranking-meta">
-                                    <div class="rating-stars">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star"></i>
-                                        <span class="text-dark ms-1 fw-bold">4.2</span>
+                    <div class="col-12 col-md-6">
+                        <div class="card ranking-card">
+                            <div class="card-body">
+                                <div class="ranking-content">
+                                    <div class="rank-badge rank-other">5</div>
+                                    <img src="images/PEAK_2jpg.jpg" class="anime-thumbnail" alt="5位">
+                                    <div class="ranking-info">
+                                        <div class="d-flex gap-2 mb-2 flex-wrap">
+                                            <span class="badge" style="background-color: blueviolet;">サバイバル</span>
+                                            <span class="badge bg-success">PC</span>
+                                        </div>
+                                        <h4 class="ranking-title">PEAK</h4>
+                                        <p class="ranking-description">最大4人で協力し、24時間ごとに姿を変える険しい山の頂上（PEAK）を目指す</p>
+                                        <div class="ranking-meta">
+                                            <div class="rating-stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                                <span class="text-dark ms-1 fw-bold">4.2</span>
+                                            </div>
+                                            <span class="text-muted">987件のレビュー</span>
+                                            <span class="trend-down">
+                                                <i class="bi bi-arrow-down-circle-fill"></i> 先週より -2
+                                            </span>
+                                        </div>
                                     </div>
-                                    <span class="text-muted">987件のレビュー</span>
-                                    <span class="trend-down">
-                                        <i class="bi bi-arrow-down-circle-fill"></i> 先週より -2
-                                    </span>
+                                    <div class="ranking-action">
+                                        <button class="btn btn-outline-dark">詳細</button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="ranking-action">
-                                <button class="btn btn-outline-dark">詳細</button>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card ranking-card">
-                    <div class="card-body">
-                        <div class="ranking-content">
-                            <div class="rank-badge rank-other">6</div>
-                            <img src="images/近未来探偵ネオ.webp" class="anime-thumbnail" alt="6位">
-                            <div class="ranking-info">
-                                <div class="d-flex gap-2 mb-2 flex-wrap">
-                                    <span class="badge bg-info">SF</span>
-                                    <span class="badge bg-success">放送中</span>
-                                </div>
-                                <h4 class="ranking-title">未来探偵ネオ</h4>
-                                <p class="ranking-description">近未来を舞台に、AIと人間が協力して事件を解決するSFミステリー</p>
-                                <div class="ranking-meta">
-                                    <div class="rating-stars">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star"></i>
-                                        <span class="text-dark ms-1 fw-bold">4.4</span>
+                    <div class="col-12 col-md-6">
+                        <div class="card ranking-card">
+                            <div class="card-body">
+                                <div class="ranking-content">
+                                    <div class="rank-badge rank-other">6</div>
+                                    <img src="images/REPO_2.jpg" class="anime-thumbnail" alt="6位">
+                                    <div class="ranking-info">
+                                        <div class="d-flex gap-2 mb-2 flex-wrap">
+                                            <span class="badge" style="background-color: #666;">ホラー</span>
+                                            <span class="badge bg-success">PC</span>
+                                        </div>
+                                        <h4 class="ranking-title">REPO</h4>
+                                        <p class="ranking-description">最大6人で遊べる物理演算ベースのオンライン協力ホラーゲーム</p>
+                                        <div class="ranking-meta">
+                                            <div class="rating-stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                                <span class="text-dark ms-1 fw-bold">4.4</span>
+                                            </div>
+                                            <span class="text-muted">1,987件のレビュー</span>
+                                            <span class="trend-up">
+                                                <i class="bi bi-arrow-up-circle-fill"></i> 先週より +3
+                                            </span>
+                                        </div>
                                     </div>
-                                    <span class="text-muted">1,987件のレビュー</span>
-                                    <span class="trend-up">
-                                        <i class="bi bi-arrow-up-circle-fill"></i> 先週より +3
-                                    </span>
+                                    <div class="ranking-action">
+                                        <button class="btn btn-outline-dark">詳細</button>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="ranking-action">
-                                <button class="btn btn-outline-dark">詳細</button>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="card ranking-card">
-                    <div class="card-body">
-                        <div class="ranking-content">
-                            <div class="rank-badge rank-other">7</div>
-                            <img src="images/都市伝説探偵.webp" class="anime-thumbnail" alt="7位">
-                            <div class="ranking-info">
-                                <div class="d-flex gap-2 mb-2 flex-wrap">
-                                    <span class="badge bg-dark">ホラー</span>
-                                    <span class="badge bg-success">放送中</span>
-                                </div>
-                                <h4 class="ranking-title">都市伝説探偵</h4>
-                                <p class="ranking-description">現代に蘇る都市伝説の謎を解き明かす学園ホラーミステリー</p>
-                                <div class="ranking-meta">
-                                    <div class="rating-stars">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star"></i>
-                                        <span class="text-dark ms-1 fw-bold">4.3</span>
+                    <div class="col-12 col-md-6">
+                        <div class="card ranking-card">
+                            <div class="card-body">
+                                <div class="ranking-content">
+                                    <div class="rank-badge rank-other">7</div>
+                                    <img src="images/p3r_2.png" class="anime-thumbnail" alt="7位">
+                                    <div class="ranking-info">
+                                        <div class="d-flex gap-2 mb-2 flex-wrap">
+                                            <span class="badge bg-dark">RPG</span>
+                                            <span class="badge bg-success">PC</span>
+                                            <span class="badge bg-success">PS5</span>
+                                            <span class="badge bg-success">switch2</span>
+                                        </div>
+                                        <h4 class="ranking-title">PERSONA3 RELOAD</h4>
+                                        <p class="ranking-description">昼は学園生活、夜はスタイリッシュに戦うRPG</p>
+                                        <div class="ranking-meta">
+                                            <div class="rating-stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                                <span class="text-dark ms-1 fw-bold">4.3</span>
+                                            </div>
+                                            <span class="text-muted">1,567件のレビュー</span>
+                                            <span class="trend-same">
+                                                <i class="bi bi-dash-circle-fill"></i> 変動なし
+                                            </span>
+                                        </div>
                                     </div>
-                                    <span class="text-muted">1,567件のレビュー</span>
-                                    <span class="trend-same">
-                                        <i class="bi bi-dash-circle-fill"></i> 変動なし
-                                    </span>
+                                    <div class="ranking-action">
+                                        <button class="btn btn-outline-dark">詳細</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="ranking-action">
-                                <button class="btn btn-outline-dark">詳細</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card ranking-card">
+                            <div class="card-body">
+                                <div class="ranking-content">
+                                    <div class="rank-badge rank-other">8</div>
+                                    <img src="images/STREETFIGHTER.webp" class="anime-thumbnail" alt="7位">
+                                    <div class="ranking-info">
+                                        <div class="d-flex gap-2 mb-2 flex-wrap">
+                                            <span class="badge" style="background-color: #10b981;">格闘</span>
+                                            <span class="badge bg-success">switch2</span>
+                                            <span class="badge bg-success">PC</span>
+                                            <span class="badge bg-success">PS5</span>
+                                        </div>
+                                        <h4 class="ranking-title">STREETFIGHTER6</h4>
+                                        <p class="ranking-description">シンプルかつ競技性の高い2D格闘ゲーム</p>
+                                        <div class="ranking-meta">
+                                            <div class="rating-stars">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star"></i>
+                                                <span class="text-dark ms-1 fw-bold">4.1</span>
+                                            </div>
+                                            <span class="text-muted">1,567件のレビュー</span>
+                                            <span class="trend-same">
+                                                <i class="bi bi-dash-circle-fill"></i> 変動なし
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="ranking-action">
+                                        <button class="btn btn-outline-dark">詳細</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -637,8 +697,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-3">
-                    <h5 class="fw-bold mb-3"><i class="bi bi-film"></i> AniListo</h5>
-                    <p class="text-light">あなたの好きなアニメを見つけて、共有しよう。</p>
+                    <h5 class="fw-bold mb-3"><i class="bi bi-controller"></i> PlayHub</h5>
+                    <p class="text-light">あなたの好きなゲームを見つけて、共有しよう。</p>
                 </div>
                 <div class="col-md-2 mb-3">
                     <h6 class="fw-bold mb-3">サイト情報</h6>
@@ -667,7 +727,7 @@
                 </div>
             </div>
             <hr class="border-light">
-            <p class="text-center text-light mb-0">&copy; 2025 AniListo. All rights reserved.</p>
+            <p class="text-center text-light mb-0">&copy; 2025 PlayHub. All rights reserved.</p>
         </div>
     </footer>
     <button id="backToTopBtn" class="btn shadow d-flex align-items-center justify-content-center">

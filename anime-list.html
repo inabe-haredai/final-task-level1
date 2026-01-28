@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>作品一覧 - AniListo</title>
+    <title>作品一覧 - PlayHub</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,7 +44,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">
-                <i class="bi bi-film"></i> AniListo
+                <i class="bi bi-controller"></i> PlayHub
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -79,7 +79,7 @@
     <!-- ページヘッダー -->
     <div class="page-heading">
         <div class="container">
-            <h1 class="display-4 fw-bold mb-3">アニメ作品一覧</h1>
+            <h1 class="display-4 fw-bold mb-3">ゲーム作品一覧</h1>
             <p class="lead">10,000以上の作品からお気に入りを見つけよう</p>
             <div class="row mt-4">
                 <div class="col-md-8">
@@ -109,44 +109,44 @@
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="checkbox" id="genre1">
                                 <label class="form-check-label" for="genre1">
-                                    ファンタジー <span class="badge bg-secondary">234</span>
+                                    アクション <span class="badge bg-secondary">234</span>
                                 </label>
                             </div>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="checkbox" id="genre2">
                                 <label class="form-check-label" for="genre2">
-                                    恋愛 <span class="badge bg-secondary">189</span>
+                                    FPS <span class="badge bg-secondary">189</span>
                                 </label>
                             </div>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="checkbox" id="genre3">
                                 <label class="form-check-label" for="genre3">
-                                    アクション <span class="badge bg-secondary">312</span>
+                                    MOBA <span class="badge bg-secondary">312</span>
                                 </label>
                             </div>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="checkbox" id="genre4">
                                 <label class="form-check-label" for="genre4">
-                                    SF <span class="badge bg-secondary">156</span>
+                                    格闘 <span class="badge bg-secondary">156</span>
                                 </label>
                             </div>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="checkbox" id="genre5">
                                 <label class="form-check-label" for="genre5">
-                                    コメディ <span class="badge bg-secondary">201</span>
+                                    RPG <span class="badge bg-secondary">201</span>
                                 </label>
                             </div>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="checkbox" id="genre6">
                                 <label class="form-check-label" for="genre6">
-                                    ホラー <span class="badge bg-secondary">89</span>
+                                    レース <span class="badge bg-secondary">89</span>
                                 </label>
                             </div>
                         </div>
 
                         <!-- 放送時期 -->
                         <div class="filter-section">
-                            <h6 class="fw-bold mb-3">放送時期</h6>
+                            <h6 class="fw-bold mb-3">ゲーム発売時期</h6>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="radio" name="season" id="season1">
                                 <label class="form-check-label" for="season1">
@@ -181,23 +181,23 @@
 
                         <!-- 放送状況 -->
                         <div class="filter-section">
-                            <h6 class="fw-bold mb-3">放送状況</h6>
+                            <h6 class="fw-bold mb-3">ゲーム状況</h6>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="checkbox" id="status1">
                                 <label class="form-check-label" for="status1">
-                                    放送中 <span class="badge bg-success">78</span>
+                                    製品版 <span class="badge bg-success">78</span>
                                 </label>
                             </div>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="checkbox" id="status2">
                                 <label class="form-check-label" for="status2">
-                                    完結 <span class="badge bg-secondary">456</span>
+                                    体験版 <span class="badge bg-secondary">456</span>
                                 </label>
                             </div>
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="checkbox" id="status3">
                                 <label class="form-check-label" for="status3">
-                                    放送予定 <span class="badge bg-info">23</span>
+                                    ベータ版 <span class="badge bg-info">23</span>
                                 </label>
                             </div>
                         </div>
@@ -275,15 +275,16 @@
                 <div class="row g-4 mb-4" id="contentDisplay">
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card position-relative">
-                            <img src="images/異世界の勇者 ～運命の旅路～.webp" class="card-img-top" alt="異世界の勇者">
+                            <img src="images/kaby_task.webp" class="card-img-top" alt="kaby">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-primary">ファンタジー</span>
-                                    <span class="badge bg-success">放送中</span>
+                                    <span class="badge bg-danger">アクション</span>
+                                    <span class="badge bg-success">switch2・switch</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">異世界の勇者 ～運命の旅路～</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">星のカービィ　ディスカバリー<br>+スターリーワールド</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    異世界に勇者として召喚された高校生・佐藤翔太が、仲間との絆を力に魔王軍や陰謀へ挑む。成長と感動が交錯する、胸躍る王道ファンタジー冒険譚。</p>
+                                    シリーズ初の本格的な3Dアクションゲームで、文明と自然が融合した「新世界」を舞台に、カービィがワドルディを救うために冒険するゲームです。おなじみの「すいこみ」「はきだし」「コピー能力」が360度自由に使えるほか、「ほおばり変形」という新アクションで車や自販機などを吸い込んで変身し、ギミックを解いたり敵を倒したりします。コピー能力も進化して派手な技が出せるようになり、探索要素と爽快なアクションが楽しめる、初心者から経験者まで幅広い層におすすめの作品です。
+                                </p>
                                 <a href="anime-detail.html" class="stretched-link"></a>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
@@ -302,23 +303,24 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/桜色の約束.webp" class="card-img-top" alt="桜色の約束">
+                            <img src="images/lol_task.jpg" class="card-img-top" alt="lol">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-danger">恋愛</span>
-                                    <span class="badge bg-success">放送中</span>
+                                    <span class="badge bg-primary">MOBA</span>
+                                    <span class="badge bg-success">PC</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">桜色の約束</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">League of Legends</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    高校最後の春。幼馴染との小さな“約束”を胸に、揺れる想いと未来への一歩を描く、切なくも温かい青春ラブストーリー。</p>
+                                    チームで戦うストラテジーゲーム。5体の強力な“チャンピオン”で構成された2つのチームが、互いに相手の本拠地を目指して激突します。140体以上の多彩なチャンピオンの中から自分の使う1体を選んで、スキルを披露、キルを獲得、そしてタワーを破壊して勝利を掴みましょう。
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
-                                        <span class="text-dark ms-1">4.8</span>
+                                        <i class="bi bi-star"></i>
+                                        <span class="text-dark ms-1">4.0</span>
                                     </div>
                                     <small class="text-muted">2,156件</small>
                                 </div>
@@ -328,15 +330,18 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/量子戦士クロノス.webp" class="card-img-top" alt="量子戦士">
+                            <img src="images/apex_task.webp" class="card-img-top" alt="apex">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-info">SF</span>
-                                    <span class="badge bg-success">放送中</span>
+                                    <span class="badge bg-info">FPS</span>
+                                    <span class="badge bg-success">PC</span>
+                                    <span class="badge bg-success">PS5</span>
+                                    <span class="badge bg-success">switch2・switch</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">量子戦士クロノス</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">APEX</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    時空のゆがみに巻き込まれた少年が“量子戦士”として覚醒。過去と未来を駆け巡り、崩壊する世界を救うため仲間と共に戦い抜く、スケール壮大なSFアクション。</p>
+                                    基本プレイ無料のFPS（ファーストパーソン・シューティング）ゲームで、個性豊かなキャラクター（レジェンド）を操作し、3人1組のチームで広大なマップを舞台に最後の1チーム（チャンピオン）を目指すバトルロイヤル形式です。特徴は、レジェンドごとの固有アビリティ（特殊スキル）を駆使した連携と、ボイスチャットなしでも円滑な意思疎通ができるピンシステムにより、初心者でもチームで活躍しやすい点です。
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
@@ -354,15 +359,43 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/魔法学園の日常.webp" class="card-img-top" alt="魔法学園">
+                            <img src="images/mariokart.jpg" class="card-img-top" alt="マリカ">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-primary">ファンタジー</span>
-                                    <span class="badge bg-success">放送中</span>
+                                    <span class="badge" style="background-color: #f97316;">レース</span>
+                                    <span class="badge bg-success">switch2</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">魔法学園の日常</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">マリオカート　ワールド</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    魔法学園に通う個性豊かな生徒たちが、授業や試験、友情や恋に揺れながら日々成長していく。笑いとときめきがあふれる、魔法世界の青春ファンタジー。</p>
+                                    「オープンワールド」と「大陸横断レース」をコンセプトにした革新的な作品です。広大な世界を自由に走り回れる「フリーラン」モードや、連続するコースを走破する「サバイバル」モード、最大24人でのオンライン対戦などが特徴で、シリーズ初の天候・時間変化も導入されています。
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="rating-stars small">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                        <span class="text-dark ms-1">4.9</span>
+                                    </div>
+                                    <small class="text-muted">3,456件</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card anime-card">
+                            <img src="images/VALORANT.jpg" class="card-img-top" alt="ヴァロ">
+                            <div class="card-body">
+                                <div class="d-flex gap-2 mb-2">
+                                    <span class="badge bg-info">FPS</span>
+                                    <span class="badge bg-warning text-dark">人気</span>
+                                </div>
+                                <h5 class="card-title fw-bold card-title-nowrap">VALORANT</h5>
+                                <p class="card-text text-muted small text-clamp-3">
+                                    基本プレイ無料の5対5対戦型タクティカルFPSです。銃による精確な射撃技術（エイム）と、個性的な「アビリティ」を駆使する戦略性が特徴で、攻撃・防衛に分かれ13ラウンド先取したチームが勝利する競技性の高い人気ゲームです。
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
@@ -380,67 +413,16 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/竜騎士の伝説.webp" class="card-img-top" alt="竜騎士">
+                            <img src="images/kirbyairriders.jpg" class="card-img-top" alt="エアライダー">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-primary">ファンタジー</span>
-                                    <span class="badge bg-warning text-dark">人気</span>
+                                    <span class="badge" style="background-color: #f97316;">レース</span>
+                                    <span class="badge bg-success">switch2</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">竜騎士の伝説</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">カービィのエアライダー</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    竜と契約した若き騎士が、仲間と共に迫りくる脅威と古代の謎に立ち向かう。絆と勇気が導く、壮大な冒険と伝説が紡がれるファンタジー物語。</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="rating-stars small">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
-                                        <span class="text-dark ms-1">4.7</span>
-                                    </div>
-                                    <small class="text-muted">2,890件</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card anime-card">
-                            <img src="images/都市伝説探偵.webp" class="card-img-top" alt="都市伝説">
-                            <div class="card-body">
-                                <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-dark">ホラー</span>
-                                    <span class="badge bg-success">放送中</span>
-                                </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">都市伝説探偵</h5>
-                                <p class="card-text text-muted small text-clamp-3">
-                                    現代の学園で囁かれる“都市伝説”が次々と現実化。謎を追う探偵部の生徒たちが、恐怖と真相に迫っていく。怪異と推理が交錯する学園ホラーミステリー。</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="rating-stars small">
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star"></i>
-                                        <span class="text-dark ms-1">4.3</span>
-                                    </div>
-                                    <small class="text-muted">1,567件</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card anime-card">
-                            <img src="images/近未来探偵ネオ.webp" class="card-img-top" alt="未来探偵">
-                            <div class="card-body">
-                                <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-info">SF</span>
-                                    <span class="badge bg-success">放送中</span>
-                                </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">未来探偵ネオ</h5>
-                                <p class="card-text text-muted small text-clamp-3">
-                                    近未来都市を舞台に、若き探偵ネオが最新テクノロジーと鋭い推理力で複雑な事件に挑む。陰謀が渦巻く世界で真実を追い続ける、スタイリッシュなSFミステリーアクション。</p>
+                                    多彩な「エアライドマシン」を駆使してファンタジックな3Dコースを駆け抜ける、シンプルかつ爽快なアクションレースゲームです。特徴的な「シティトライアル」では、街を探索してマシンを強化し、スタジアムでバトルする最大16人のマルチプレイが楽しめます。
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
@@ -458,16 +440,15 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/音楽少女のメロディ.webp" class="card-img-top" alt="音楽少女">
+                            <img src="images/PEAK_2jpg.jpg" class="card-img-top" alt="PEAK">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge bg-danger">恋愛</span>
-                                    <span class="badge bg-secondary">完結</span>
+                                    <span class="badge" style="background-color: blueviolet;">サバイバル</span>
+                                    <span class="badge bg-success">PC</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">音楽少女のメロディ</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">PEAK</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    音楽に情熱を注ぐ少女たちが、友情や恋、夢に揺れながら成長していく姿を描く。笑顔と涙、感動が溢れる青春音楽ストーリー。
-
+                                    最大4人で協力して謎の島の中央にある山頂を目指す、協力型登山アクションゲームです。わずかなミスも命取りになるリアルな物理演算と、スタミナ管理、食料確保、アイテム選択などのサバイバル要素が特徴で、ロープや杭を使って仲間を助け合いながら、変化するマップを登っていくのが目的です。
                                 </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
@@ -475,10 +456,10 @@
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
-                                        <i class="bi bi-star-half"></i>
-                                        <span class="text-dark ms-1">4.5</span>
+                                        <i class="bi bi-star"></i>
+                                        <span class="text-dark ms-1">4.4</span>
                                     </div>
-                                    <small class="text-muted">3,245件</small>
+                                    <small class="text-muted">1,987件</small>
                                 </div>
                             </div>
                         </div>
@@ -486,15 +467,17 @@
 
                     <div class="col-md-6 col-lg-4">
                         <div class="card anime-card">
-                            <img src="images/料理バトル王.webp" class="card-img-top" alt="料理バトル">
+                            <img src="images/REPO_2.jpg" class="card-img-top" alt="repo">
                             <div class="card-body">
                                 <div class="d-flex gap-2 mb-2">
-                                    <span class="badge" style="background-color: #f97316;">グルメ</span>
-                                    <span class="badge bg-success">放送中</span>
+                                    <span class="badge" style="background-color: #666;">ホラー</span>
+                                    <span class="badge bg-success">PC</span>
                                 </div>
-                                <h5 class="card-title fw-bold card-title-nowrap">料理バトル王</h5>
+                                <h5 class="card-title fw-bold card-title-nowrap">REPO</h5>
                                 <p class="card-text text-muted small text-clamp-3">
-                                    情熱と技をぶつけ、究極の一皿を目指す少年たちの熱血料理バトル。友情やライバルとの絆を胸に、最強の料理人への道を駆け抜けるグルメアクション。</p>
+                                    最大6人で協力して廃墟から「お宝」を回収するオンライン協力ホラー探索ゲームです。物理演算で動く重い・壊れやすいアイテムを慎重に運び、恐ろしいモンスターから隠れながら、静寂と緊張感の中でミッションをクリアするのが特徴で、『Lethal
+                                    Company』ライクな作品として人気を集めています。
+                                </p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="rating-stars small">
                                         <i class="bi bi-star-fill"></i>
@@ -502,9 +485,37 @@
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star-fill"></i>
                                         <i class="bi bi-star"></i>
-                                        <span class="text-dark ms-1">4.1</span>
+                                        <span class="text-dark ms-1">4.4</span>
                                     </div>
-                                    <small class="text-muted">876件</small>
+                                    <small class="text-muted">1,987件</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card anime-card">
+                            <img src="images/p3r_2.png" class="card-img-top" alt="p3r">
+                            <div class="card-body">
+                                <div class="d-flex gap-2 mb-2">
+                                    <span class="badge bg-dark">RPG</span>
+                                    <span class="badge bg-success">PC</span>
+                                    <span class="badge bg-success">PS5</span>
+                                    <span class="badge bg-success">switch2</span>
+                                </div>
+                                <h5 class="card-title fw-bold card-title-nowrap">PERSONA3 RELOAD</h5>
+                                <p class="card-text text-muted small text-clamp-3">
+                                   2006年発売の『ペルソナ3』を最新技術でフルリメイクした、青春とダークなストーリーが融合するRPGです。高校生活で友情や恋愛を育む日常パートと、シャドウと戦う夜のダンジョン探索、スタイリッシュなコマンドバトルが特徴です。 </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="rating-stars small">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                        <span class="text-dark ms-1">4.3</span>
+                                    </div>
+                                    <small class="text-muted">1.567件</small>
                                 </div>
                             </div>
                         </div>
@@ -546,8 +557,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-3">
-                    <h5 class="fw-bold mb-3"><i class="bi bi-film"></i> AniListo</h5>
-                    <p class="text-light">あなたの好きなアニメを見つけて、共有しよう。</p>
+                    <h5 class="fw-bold mb-3"><i class="bi bi-controller"></i> PlayHub</h5>
+                    <p class="text-light">あなたの好きなゲームを見つけて、共有しよう。</p>
                 </div>
                 <div class="col-md-2 mb-3">
                     <h6 class="fw-bold mb-3">サイト情報</h6>
@@ -576,7 +587,7 @@
                 </div>
             </div>
             <hr class="border-light">
-            <p class="text-center text-light mb-0">&copy; 2025 AniListo. All rights reserved.</p>
+            <p class="text-center text-light mb-0">&copy; 2025 PlayHub. All rights reserved.</p>
         </div>
     </footer>
     <button id="backToTopBtn" class="btn shadow d-flex align-items-center justify-content-center">
